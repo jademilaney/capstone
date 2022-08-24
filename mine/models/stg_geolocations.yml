@@ -1,0 +1,11 @@
+version : 2
+
+models:
+  - name: stg_geolocations
+    description: "geolocaiton data"
+    columns:
+      - name: geolocation_zip_code_prefix
+      - name: geolocation_lat
+      - name: geolocation_lng
+      - name: geolocation_city
+      - name: geolocation_state
