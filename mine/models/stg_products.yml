@@ -5,6 +5,11 @@ models:
     columns:
       - name: product_id
       - name: product_category_name
+        tests:
+          - null_proportion:
+              at most: 0.02
+              config:
+                store_failures: true
       - name: product_name_length
       - name: product_description_length
       - name: product_photos_qty
