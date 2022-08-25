@@ -8,11 +8,11 @@ for readability we will join to the products table to find the name or category 
 
 2. **Marketing**
 **Metric** Customer Lifetime Value 
-**Definition** Sum( price) grouped by customer
+**Definition** Sum( price) grouped by customer in this case it would be the ** value ** of the customer specifically.
 **Visualization** take the average of this metric over time grouped monthly on a line chart
  
 3. **Finance** 
-**Metric** revenue by seller 
+**Metric** revenue by seller - maybe a better metric here is profits (revenue less payouts less shipping)
 **Definition** sum(price) over time and grouped by the seller_id 
 **Visualization** bar chart with top 10 sellers 
 
@@ -22,6 +22,6 @@ for readability we will join to the products table to find the name or category 
 **Visualization** big number period over period change in average freight value
 
 5. And lastly, the **CEO** who is interested in knowing about the overall health of the company and where she should be focusing her time and effort.
-**Metric** paid vs sponsored orders
+**Metric** rate of paid sales / voucher sales
 **Definition** sum( credit card or ach payments)/ sum ( voucher payments ) --> i'm assuming here that vouchers are gifted
 **Visualization** line chart showing our metric over time, we want to see if the vouchers are helping the company grow.
