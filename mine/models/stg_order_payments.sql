@@ -4,10 +4,11 @@ with source as ( select *
 
     ,fixed as ( select 
     order_id
-    ,payment_sequential
     ,payment_type
     ,payment_installments
+    ,payment_sequential
     ,payment_value
+    
     from  source
     )
 

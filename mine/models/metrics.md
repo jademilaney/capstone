@@ -25,3 +25,4 @@ for readability we will join to the products table to find the name or category 
 **Metric** rate of paid sales / voucher sales
 **Definition** sum( credit card or ach payments)/ sum ( voucher payments ) --> i'm assuming here that vouchers are gifted
 **Visualization** line chart showing our metric over time, we want to see if the vouchers are helping the company grow.
+

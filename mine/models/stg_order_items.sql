@@ -1,9 +1,8 @@
-with source as ( select {{ dbt_utils.surrogate_key(['order_id', 'order_item_id']) }} as order_item_sk
-        ,*
+with source as ( select *
         from {{ source ('ecommerce','order_items') }}
     ) 
     ,fixed as ( select 
-        order_item_sk
+        {{ dbt_utils.surrogate_key(['order_id', 'order_item_id']) }} as order_item_sk
         ,order_id
         ,order_item_id
         ,product_id
