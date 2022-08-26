@@ -1,0 +1,23 @@
+version: 2
+models:
+  - name: fct_orders_details
+    materialized: table
+    description: " fact table with frequently used order details"
+    columns: 
+      - name: order_item_sk
+      - name: review_order_sk
+      - name: review_id
+      - name: order_id
+      - name: product_id
+      - name: order_item_id
+      - name: seller_id
+      - name: customer_id
+      - name: order_purchase_timestamp
+      - name: order_delivered_customer_date
+      - name: review_creation_date
+      - name: review_answer_timestamp
+      - name: product_category_name_english
+      - name: order_status
+      - name: review_score
+      - name: price
+      - name: freight_value
