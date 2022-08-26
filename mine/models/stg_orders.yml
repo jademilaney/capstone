@@ -1,0 +1,18 @@
+version: 2
+models: 
+  - name: stg_orders
+    description: "tbd"
+    columns:
+      - name: order_id
+        tests: 
+          - not_null
+      - name: customer_id
+      - name: order_status 
+        tests: 
+          - accepted values:
+              values: ['created','shipped','approved','canceled','invoiced',delivered','processing','unavailable']
+      - name: order_purchase_timestamp
+      - name : order_approved_at
+      - name : order_delivered_carrier_date
+      - name : order_delviered_customer_date
+      - name : order_estimated_delivery_date

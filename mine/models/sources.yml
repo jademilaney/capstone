@@ -1,0 +1,17 @@
+version : 2
+sources:
+  - name: ecommerce
+    description: "sources from the raw capstone data profided by jacob"
+    database: ae-capstone-raw
+    schema: ecommerce
+    tables:
+      - name: customers
+      - name: geolocations
+      - name: order_items
+      - name: order_payments
+      - name: order_reviews
+      - name: orders
+      - name: product_category_name_translation
+      - name: products
+      - name: sellers
+  
