@@ -1,7 +1,4 @@
-{% macro test_null_proportion(model) %}
-
-{% set column_name = kwargs.get('column_name', kwargs.get('arg')) %}
-{% set at_most = kwargs.get('at_most', kwargs.get('arg', 1)) %}
+{% macro test_null_proportion(model, column_name, maximum) %}
 
 with validation as (
   select
@@ -12,7 +9,7 @@ with validation as (
   select
     null_proportion
   from validation
-  where null_proportion > {{ at_most }}
+  where null_proportion > {{ maximum }}
 )
 select
   *
