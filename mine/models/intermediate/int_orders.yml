@@ -1,0 +1,20 @@
+version: 2
+models: 
+  - name: int_orders
+    description: "intermediate layer table for orders+order items"
+    columns:
+      - name: order_id
+      - name: order_item_id
+      - name: customer_id
+      - name: seller_id
+      - name: product_id
+      - name: order_purchase_timestamp
+      - name: order_approved_at
+      - name: order_delivered_carrier_date
+      - name: order_delivered_customer_date
+      - name: order_estimated_delivery_date
+      - name: order_status
+      - name: price
+      - name: freight_value
+
+  
