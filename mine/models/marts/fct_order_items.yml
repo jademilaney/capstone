@@ -5,6 +5,8 @@ models:
     description: " fact table with frequently used order details"
     columns: 
       - name: order_item_sk
+        tests: 
+          - unique
       - name: review_order_sk
       - name: review_id
       - name: order_id

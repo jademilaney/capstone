@@ -1,7 +1,11 @@
 with orders as ( select * 
             from {{ref('int_orders')}})
-    ,products as (select * from {{ref('int_products')}})
-    ,reviews as ( select * from {{ref('stg_order_reviews')}} )
+    ,products as (
+    select * from {{ref('int_products')}}
+        )
+    ,reviews as (
+         select * from {{ref('stg_order_reviews')}} 
+        )
     ,final as (
             select 
             orders.order_item_sk
