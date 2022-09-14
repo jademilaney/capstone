@@ -1,6 +1,7 @@
 version: 2
 models: 
   - name: int_orders
+    materialized: table
     description: "intermediate layer table for orders+order items"
     columns:
       - name: order_id

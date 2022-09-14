@@ -1,6 +1,7 @@
 version: 2
 models: 
   - name: int_products
+    materialized: table
     description: "products table with english name"
     columns:
       - name: product_id
