@@ -1,5 +1,5 @@
-with source as ( select *  
-        from {{ source ('ecommerce','order_payments')}}
+with source as ( 
+    select *  from {{ source ('ecommerce','order_payments')}}
     ) 
 
     ,fixed as ( select 

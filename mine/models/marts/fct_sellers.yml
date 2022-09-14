@@ -1,0 +1,20 @@
+version: 2
+models:
+  - name: fct_sellers
+    materialized: table
+    description: "sellers + orders info"
+    columns: 
+      - name: order_item_sk
+        tests: 
+          - unique
+      - name: order_id
+      - name: product_id
+      - name: order_item_id
+      - name: seller_id
+      - name: customer_id
+      - name: order_status
+      - name: price
+      - name: freight_value
+      - name: seller_zip_code_prefix
+      - name: seller_city
+      - name: seller_state
