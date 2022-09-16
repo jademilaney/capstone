@@ -1,6 +1,8 @@
 version: 2 
 models:
   - name: stg_order_reviews
+    config:
+      tags: "weekly" 
     columns: 
       - name : review_order_sk 
         description: "surrogate key, since multiple reviews can be made on one order"

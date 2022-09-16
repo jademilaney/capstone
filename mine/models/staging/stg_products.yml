@@ -1,6 +1,8 @@
 version: 2
 models: 
   - name: stg_products
+    config:
+      tags: "weekly" 
     description: "products table"
     columns:
       - name: product_id

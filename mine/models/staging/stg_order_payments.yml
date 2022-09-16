@@ -1,6 +1,8 @@
 version: 2
 models: 
   - name: stg_order_payments
+    config:
+      tags: "weekly" 
     description: "transcation table for order payments"
     columns: 
       - name: order_id

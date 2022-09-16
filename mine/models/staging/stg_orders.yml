@@ -1,6 +1,8 @@
 version: 2
 models: 
   - name: stg_orders
+    config:
+      tags: "weekly" 
     description: "tbd"
     columns:
       - name: order_id

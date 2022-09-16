@@ -1,7 +1,8 @@
 version: 2
 models:
   - name: fct_sellers
-    materialized: table
+    config:
+      tags: "weekly" 
     description: "sellers + orders info"
     columns: 
       - name: order_item_sk
