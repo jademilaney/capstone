@@ -1,6 +1,8 @@
 version: 2
 models:
  - name: stg_product_category_name_translation
+   config:
+      tags: "weekly" 
    columns: 
     - name: product_category_name_portuguese
     - name: product_category_name_english

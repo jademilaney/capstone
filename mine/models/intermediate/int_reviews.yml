@@ -1,0 +1,21 @@
+version: 2
+models: 
+  - name: int_reviews
+    config:
+      tags: "daily"
+    materialized: table
+    description: "modification of review score table to have a column for each category of score"
+    columns: 
+      - name: review_answer_sk
+        tests:
+          - not_null
+          - unique
+      - name: review_order_sk
+      - name: order_id
+      - name: review_creation_date
+      - name: review_answer_timestamp 
+      - name: review_score_1
+      - name: review_score_2
+      - name: review_score_3
+      - name: review_score_4
+      - name: review_score_5

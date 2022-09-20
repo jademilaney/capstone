@@ -1,0 +1,16 @@
+version: 2
+models:
+  - name: fct_aggregate_reviews
+    config:
+      tags: "weekly" 
+    +materialized: table
+    description: "review counts for each category, limited to product categories with more than 30 reviews in the last month"
+    columns: 
+      - name: product_category_name_english
+      - name: month_year
+      - name: count_reviews
+      - name: count_reviews_score_1
+      - name: count_reviews_score_2
+      - name: count_reviews_score_3
+      - name: count_reviews_score_4
+      - name: count_reviews_score_5

@@ -1,6 +1,9 @@
 version: 2
 models: 
   - name: int_orders
+    config:
+      tags: "daily"
+    materialized: table
     description: "intermediate layer table for orders+order items"
     columns:
       - name: order_id
@@ -16,5 +19,6 @@ models:
       - name: order_status
       - name: price
       - name: freight_value
+
 
   

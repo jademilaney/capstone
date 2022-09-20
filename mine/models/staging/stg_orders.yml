@@ -1,6 +1,8 @@
 version: 2
 models: 
   - name: stg_orders
+    config:
+      tags: "weekly" 
     description: "tbd"
     columns:
       - name: order_id
@@ -24,7 +26,7 @@ models:
       - name : order_delivered_customer_date
         tests:
           - null_proportion:
-              maximum: 0.02
+              maximum: 0.06
               config:
                 store_failures: true
       - name : order_estimated_delivery_date

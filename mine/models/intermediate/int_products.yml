@@ -1,6 +1,8 @@
 version: 2
 models: 
   - name: int_products
+    config:
+      tags: "weekly" 
     description: "products table with english name"
     columns:
       - name: product_id

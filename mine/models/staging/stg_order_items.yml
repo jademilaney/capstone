@@ -1,6 +1,8 @@
 version: 2
 models:
   - name: stg_order_items
+    config:
+      tags: "weekly" 
     description: "order detail table"
     columns:
       - name: order_item_sk

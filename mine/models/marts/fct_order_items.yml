@@ -1,8 +1,9 @@
 version: 2
 models:
   - name: fct_orders_details
-    materialized: table
-    description: " fact table with frequently used order details"
+    config:
+      tags: "weekly" 
+    description: " fact table with frequently used order details"    
     columns: 
       - name: order_item_sk
         tests: 

@@ -1,5 +1,5 @@
-with orders as ( select * 
-            from {{ref('int_orders')}})
+with orders as ( 
+    select * from {{ref('int_orders')}})
     ,products as (
     select * from {{ref('int_products')}}
         )
@@ -26,7 +26,7 @@ with orders as ( select *
             ,orders.price
             ,orders.freight_value
             from orders 
-            left join products on products.product_id=orders.order_id 
+            left join products on products.product_id=orders.product_id 
             left join reviews on reviews.order_id = orders.order_id 
                     )
 select * from final

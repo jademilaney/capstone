@@ -21,9 +21,11 @@ with order_items as (
         ,orders.order_status
         ,order_items.price
         ,order_items.freight_value
+       
 
     from order_items
     left join orders on orders.order_id=order_items.order_id
+
 )
 
 select * from joined

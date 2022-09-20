@@ -1,14 +1,14 @@
-with source as( select *  
-        from source {{('ecommerce','geolocations')}}
+with source as( 
+    select *  from {{ source('ecommerce','geolocations')}}
     )
 
-    ,fixed as( select 
-    gelocation_city
+    ,fixed as( 
+    select 
+    geolocation_city
     ,geolocation_lat
     ,geolocation_lng as geolocation_long
     ,geolocation_state
-    ,geolocation zip_code_prefix
-    
+    ,geolocation_zip_code_prefix
     from source 
     ) 
 
